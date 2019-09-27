@@ -1,3 +1,20 @@
 body {
   background-color: powderblue;
 }
+
+div {
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+}
+
+h1 {
+  font-family: verdana;
+  font-size: 300%;
+}
+
+h2 {
+  font-family: courier;
+  font-size: 200%;
+}
