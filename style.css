@@ -22,4 +22,5 @@ h2 {
 img {
   width: 250px;
   float: right;
+  border: 1px solid black;
 }
