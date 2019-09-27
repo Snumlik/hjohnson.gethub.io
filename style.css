@@ -18,3 +18,7 @@ h2 {
   font-family: courier;
   font-size: 200%;
 }
+
+img {
+  width: 300px; 
+}
