@@ -1,0 +1,32 @@
+body{}
+
+main{}
+
+h2{}
+
+main{
+    display: grid;
+    grid-template-columns: lfr;
+    font-size: 0.8rem;
+}
+
+/*tablet views*/
+@media only screen and (min-width: 37.5em)
+{
+    main{
+        grid-template-columns: lfr lfr;
+    }
+
+    article:nth-child(3)
+}
+
+
+/*desktop view*/
+@media only screen and (min-width: 60em)
+{
+    main{
+        grid-template-columns: lfr lfr lfr;
+    }
+
+    article:nth-child(3)
+}
