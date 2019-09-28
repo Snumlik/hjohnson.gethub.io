@@ -1,14 +1,23 @@
-body{}
+body{
+    font-size: 18px;
+}
 
-main{}
+h1, h2{
+    font-family: 'Mate', serif;
+    font-family: 'Marcellus', serif;
+}
 
-h2{}
-
+p{
+    font-family: 'Mate', serif;
+    font-family: 'Marcellus', serif;
+}
 main{
     display: grid;
     grid-template-columns: lfr;
     font-size: 0.8rem;
 }
+
+
 
 /*tablet views*/
 @media only screen and (min-width: 37.5em)
