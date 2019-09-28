@@ -2,7 +2,7 @@ body{
     font-size: 18px;
 }
 
-h1, h2{
+h1, h3{
     font-family: 'Mate', serif;
     font-family: 'Marcellus', serif;
 }
@@ -26,7 +26,8 @@ main{
         grid-template-columns: lfr lfr;
     }
 
-    article:nth-child(3)
+    section:nth-child(3)
+    {grid-column: span2}
 }
 
 
@@ -37,5 +38,7 @@ main{
         grid-template-columns: lfr lfr lfr;
     }
 
-    article:nth-child(3)
+    section:nth-child(3)
+    {grid-column: span1}
+}
 }
