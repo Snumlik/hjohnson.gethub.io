@@ -39,7 +39,7 @@ header img {
 /* Larger viewports */
 @media only screen and (min-width: 32.5em) {
 	header img {
-		width: 100%;
+		width: 50%;
 	}
 
 	.headings h1 {
@@ -112,12 +112,13 @@ font-family: 'PT Sans Caption', sans-serif;
     background-color: blue;
     margin: 1px;
     padding: 30px;
+    height: 500px;
     display: flex;
     flex-flow: row wrap; 
     justify-content: center;
 }
 
-.child{
+.child1{
     background-color: white;
     margin: 5px;
 }
