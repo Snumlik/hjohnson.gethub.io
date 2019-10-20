@@ -114,6 +114,26 @@ nav {
 	}
 }
 
+/*hover*/
+.weather img{
+	max-width: 80%;
+	position: relative;
+	left:60px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.summary{
+	text-align: center;
+	border: 2px solid #043C53;
+	width: 200px;
+	height: 200px;
+	position: relative;
+	bottom:450px;
+	left:55px;
+	background-color: #0489A9;
+	margin:20px;
+}
 
 /*article*/
 .article{
@@ -129,8 +149,9 @@ nav {
 	max-width:60%;
 	height: auto;
 	float: right;
-	display: block;
-	/*border: 2px solid #043C53;*/
+	position: absolute;
+	right:0;
+	top:0;
 }
 
 /*contact*/
@@ -148,6 +169,7 @@ nav {
 	max-width:40%;
 	height: auto;
 	float: left;
+	position: absolute;
 	border: 2px solid #043C53;
 }
 
