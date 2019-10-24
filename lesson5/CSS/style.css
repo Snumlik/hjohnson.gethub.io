@@ -117,10 +117,10 @@ nav {
 /*hover*/
 .weather img{
 	max-width: 80%;
-	position: relative;
-	left:60px;
+	display: block;
 	margin-left:auto;
 	margin-right:auto;
+
 }
 
 .summary{
@@ -129,7 +129,7 @@ nav {
 	width: 200px;
 	height: 200px;
 	position: relative;
-	bottom:450px;
+	bottom:350px;
 	left:55px;
 	background-color: #0489A9;
 	margin:20px;
@@ -147,11 +147,12 @@ nav {
 }
 .article img{
 	max-width:60%;
+	display:block;
 	height: auto;
 	float: right;
-	position: absolute;
-	right:0;
-	top:0;
+	position: relative;
+	bottom: 200px;
+
 }
 
 /*contact*/
