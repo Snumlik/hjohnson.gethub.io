@@ -17,7 +17,22 @@ table{
     box-shadow: 10px 10px 15px rgba(98, 140, 166, .9);
     border-collapse: separate;
     border-spacing: 2px;
+   
 }
+
+table tr.samestyle.exempt{
+    color: white;
+    background-color: #628ca6;
+}
+
+tr:nth-child(odd) {
+    background-color: #e7f0ed;
+}
+tr:nth-child(even) {
+    background-color: #e7ffed;
+}
+
+
 
 body{
     font-family: 'Ubuntu', sans-serif;
