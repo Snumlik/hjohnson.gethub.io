@@ -1,0 +1,27 @@
+caption{
+    font-size: 2.5em;
+    font-weight: bold;
+    color: black;
+    background-color: #7fb9c2;
+    padding: 10px;
+    box-shadow: 10px 10px 15px rgba(98, 140, 166, .9);
+}
+
+table{
+    background-color: #a1a1a1;
+    width:42.5%;
+    text-align: center;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    box-shadow: 10px 10px 15px rgba(98, 140, 166, .9);
+    border-collapse: separate;
+    border-spacing: 2px;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+    padding:0;
+    background-color: #f1f5f7;
+    color:black;
+}
