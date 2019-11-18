@@ -61,13 +61,12 @@ nav {
 	text-align: center;
 	padding: 0;
 }
-/*
 .navigation li:first-child {
 	display: block;
 }
 .navigation li {
 	display: none;
-}*/
+}
 .navigation a {
 	display: block;
 	color: white;
@@ -81,3 +80,40 @@ nav {
 	font-weight: 700;
 }
 
+
+/* Media Query for small */
+@media only screen and (max-width: 32.5em) {
+	.forcast{
+		display:none;
+	}
+}
+
+
+/* the onclick JS toggles the .repsonsive class from display none (.navigation li) to display block because the repsonsive class is added to the end of the class list like this in HTML Line #6.
+  <ul class="navigation responsive">
+  */
+.responsive li {
+	display: block;
+}
+
+.container{
+	display: grid;
+	align-items: center;
+}
+
+input, button, select, textarea{padding:: .5rem;}
+fieldset{background-color:#eee;}
+legend{font-family:Arial, sans-serif; font-style:italic}
+
+input[type=button] {color:blue;}
+input[type=button]:hover {background-color: blue; color: white;}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+#severityvalue {
+	margin: 0 15px;
+}
