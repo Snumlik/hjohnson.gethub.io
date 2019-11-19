@@ -11,6 +11,7 @@
          <link rel="stylesheet" href="CSS/medium.css">
          <link rel="stylesheet" href="CSS/large.css">  
          <script type="text/javascript" src="JS/nav.js"></script>
+         <script type="text/javascript" src="JS/currentdate.js"></script>
 
       </head>
       <header>
@@ -26,38 +27,36 @@
         <ul class="navigation">
             <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
             <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Service</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Feedback</a></li>
-            <li><a href="#">History</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
         </ul>
     </nav>
 
    <body>
     <div class="Parent">
-        hero image
-        <div class="child1">Weather Summary</div> 
-        <p>weather summary</p>  
+     <div class="contact">
+        <p>weather summary</p> 
+        </div> 
     </div>
 
     <div class="Parent">
-        5 day forecast
+        <div class="contact">
+        <p>5 day forecast</p>
+        </div>
     </div>
     
     <div class="Parent">
-        <div class="Article">
-        <h3>Article</h3>
-        <p>all the words</p>
-        image on right
+        <div class="contact">
+        <p>Article</p>
         </div>
     </div>
 
     <div class="Parent">
         <div class="contact">
-            map on left
-            <p>contact information</p>
+          <p>Contact Info</p>
         </div>
     </div>
 
@@ -72,7 +71,7 @@
           &copy; 2019 | Hannah Johnson | Logan, Utah | <a id="byuiLink" href="https://www.byui.edu/online">BYU-Idaho Online Learning</a>
          </p>
          <p class = "bottomParagraph">
-            Last updated: <script id = "time" src="updatescript.js"></script>
+            <script id = "date" src="JS/currentdate.js"></script>
          </p>
       </div>
    </footer>
