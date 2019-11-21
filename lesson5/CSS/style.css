@@ -84,7 +84,10 @@ nav {
 /* Media Query for small */
 @media only screen and (max-width: 32.5em) {
 	.forcast{
-		display:none;
+		display: none;
+	}
+	.contact img{
+		display: none;
 	}
 }
 
@@ -156,18 +159,25 @@ tr#headerrow{
 	width: auto;
 	text-align: wrap;
 	padding:20px;
-	display: block;
+	display: flex;
+	flex-direction: row;
+	flex-flow: column wrap;
+	align-items: center;
+	justify-content: center;
+	flex: 2 0 0;
 	background-color: #7ee2fc; 
 	color: #043c53;
 	margin: 20px;
 }
 .article img{
+	display: flex;
+	justify-content: flex-end;
+	flex: 1 0 0;
 	max-width:60%;
-	display:block;
+	display:flex;
 	height: auto;
 	float: right;
 	position: relative;
-	bottom: 200px;
 
 }
 
@@ -177,16 +187,21 @@ tr#headerrow{
 	width: auto;
 	text-align: center;
 	padding:20px;
-	display: block;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
 	background-color: #7ee2fc; 
 	color: #043c53;
 	margin: 20px;
 }
 .contact img{
+	display: flex;
+	justify-content: flex-end;
 	max-width:40%;
 	height: auto;
 	float: left;
-	position: absolute;
+	position: relative;
 	border: 2px solid #043C53;
 }
 
