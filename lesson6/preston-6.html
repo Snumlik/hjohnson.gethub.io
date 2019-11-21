@@ -12,7 +12,6 @@
         <link rel="stylesheet" href="CSS/large.css">  
         <script type="text/javascript" src="JS/nav.js"></script>
         <script type="text/javascript" src="JS/banner.js"></script>
-        <script type="text/javascript" src="JS/getcurrentdate.js"></script>
     </head>
 
     <body>
@@ -47,86 +46,75 @@
     </div>   
 
     <div class="weather">
+        <img src="images/4k-wallpaper-clouds-dawn-1261728.jpg" alt="Scenic Idaho">
+        <section class="summary">
+            <h4>Weather Summary</h4>
+            <p>Current Weather: <span id="weather">Sunny</span></p>
+            <p>Today's High: <span id="high">76&deg; F</span></p>
+            <p>Humidity: <span id="humidity"> 10%</span></p>
+            <p>Wind Speed: <span id="windspeed">5 mph</span></p>
+           
+        </section>
+    </div>
+
+    <div class="forecast">
+            <table style="width: 85%">
+                    <tr>
+                      <th>Mon</th>
+                      <th>Tues</th>
+                      <th>Wed</th>
+                      <th>Thurs</th>
+                      <th>Fri</th>
+                    </tr>
+                    <tr>
+                      <td class="forecastimg"><img src="images/Sun Icon.png"> </td>
+                      <td class="forecastimg"><img src="images/Sun Icon.png"> </td>
+                      <td class="forecastimg"><img src="images/Sun Icon.png"> </td>
+                      <td class="forecastimg"><img src="images/Sun Icon.png"> </td>
+                      <td class="forecastimg"><img src="images/Sun Icon.png"> </td>
+                    </tr>
+                    
+                   
+                  </table>
+        
+    </div>
+    
+    
+    <div class="article">
+      <ul style= "list-style-type: none;">
+        <li><h3>Saturday Picnic</h3></li>
+       <li><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></li>
         <picture>
-            <img src="images/4k-wallpaper-clouds-dawn-1261728.jpg" alt="Scenic Idaho">
-        </picture>
-    <div class="summary">
-        <h4>Weather Summary</h4>
-        <ul style= "list-style-type: none;">
-            <li>Currently: Sunny</li>
-            <li>High: 76 degrees F</li>
-            <li>Wind Chill: 0</li>
-            <li>Humidity: 10%</li>
-            <li>Wind Speed: 5mph</li>
+        <img src="images/backpack-blonde-hair-blur-214574.jpg" alt="Picnic">
+       </picture>
+    </div>
+
+
+<div class="Parent">
+    <div class="contact">
+            <img src ="images/idaho.jpg" alt="Map">
+        <ul style="list-style-type:none;">
+            <li><h3>Contact Us</h3></li>
+            <li>(999)999-999</li>
+            <li>1 N 1 E</li>
+            <li>Preston, ID 83263</li>
+            <li>contactus@webdevweather.com</li>
         </ul>
-        </div>
     </div>
+</div>
 
-    <div class="forcast">
-        <table style="width:100%">
-            <tr>
-                <th>Monday</th>
-                <th>Tuesday</th>
-                <th>Wednesday</th>
-                <th>Thursday</th>
-                <th>Friday</th>
-            </tr>
-            <tr>
-                <td><img src="images/Sun Icon.png"></td>
-                <td><img src="images/Sun Icon.png"></td>
-                <td><img src="images/Sun Icon.png"></td>
-                <td><img src="images/Sun Icon.png"></td>
-                <td><img src="images/Sun Icon.png"></td>
-            </tr>
-            <tr>
-                <td>72</td>
-                <td>78</td>
-                <td>73</td>
-                <td>36</td>
-                <td>-666</td>
-            </tr>
-        </table>
+
+
+
+
+
+<footer class="footer_end"> 
+    <div>   
+       <p class="footerParagraph">
+        &copy; 2019 | Hannah Johnson | Logan, Utah | <a id="byuiLink" href="https://www.byui.edu/online">BYU-Idaho Online Learning</a></p>
+       <div id="curDate" onload="currentdate()"></div>         
     </div>
-    
-    
-        <div class="article">
-          <h3>Saturday Picnic</h3>
-           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <picture>
-            <img src="images/backpack-blonde-hair-blur-214574.jpg" alt="Picnic">
-           </picture>
-        </div>
-    
-
-    <div class="Parent">
-        <div class="contact">
-            <picture> 
-                <img src ="images/idaho.jpg" alt="Map">
-            </picture>
-            <h3>Contact Us</h3>
-            <ul style="list-style-type:none;">
-                <li>(999)999-999</li>
-                <li>1 N 1 E</li>
-                <li>Preston, ID 83263</li>
-                <li>contactus@webdevweather.com</li>
-            </ul>
-        </div>
-    </div>
-
-
-
-
-
-
-    <footer class="footer_end"> 
-      <div>   
-         <p class="footerParagraph">
-          &copy; 2019 | Hannah Johnson | Logan, Utah | <a id="byuiLink" href="https://www.byui.edu/online">BYU-Idaho Online Learning</a>
-         </p>
-         <p class = "displayDate">
-                <footer onload="displayDate()">
-         </p>
-      </div>
-   </footer>
+    <script type="text/javascript" src="JS/currentdate.js"></script>
+ </footer>
 </body>
 </html>

@@ -84,7 +84,10 @@ nav {
 /* Media Query for small */
 @media only screen and (max-width: 32.5em) {
 	.forcast{
-		display:none;
+		display: none;
+	}
+	.contact img{
+		display: none;
 	}
 }
 
@@ -99,43 +102,82 @@ nav {
 
 /*hover*/
 .weather img{
-	max-width: 80%;
+	width: 90%;
+	max-width: 922px;
 	display: block;
 	margin-left:auto;
 	margin-right:auto;
 
 }
+.weather{
+	margin: 10px auto;
+	position: relative;
+}
 
 .summary{
+	position: absolute;
+	padding: .5rem;
 	text-align: center;
-	border: 2px solid #043C53;
+	color: #043c53;
+	border: 1px solid rgb(9, 84, 114);
 	width: 200px;
 	height: 200px;
 	position: relative;
 	bottom:350px;
-	left:55px;
-	background-color: #0489A9;
+	left:65px;
+	background: radial-gradient(#eee, #7ee2fc);
+	box-shadow: 0 0 30px #111;
 	margin:20px;
 }
 
+/*forecast*/
+table, th, td{
+	margin-left: auto;
+	margin-right: auto;
+	border-collapse: collapse;
+	border: 1px #043c53;
+	color: #043c53;
+	background-color: #7ee2fc;
+	}
+
+th, td{
+	text-align: center;
+	padding: 10px;
+}
+.forecast img{
+	width: 30%;
+	height: auto;
+}
+/* trying to add background color to first row of table
+tr#headerrow{
+	background-color: #7ee2fc;
+}
+*/
 
 /*article*/
 .article{
 	width: auto;
 	text-align: wrap;
 	padding:20px;
-	display: block;
-	background-color: #0489A9; 
+	display: flex;
+	flex-direction: row;
+	flex-flow: column wrap;
+	align-items: center;
+	justify-content: center;
+	flex: 2 0 0;
+	background-color: #7ee2fc; 
 	color: #043c53;
 	margin: 20px;
 }
 .article img{
+	display: flex;
+	justify-content: flex-end;
+	flex: 1 0 0;
 	max-width:60%;
-	display:block;
+	display:flex;
 	height: auto;
 	float: right;
 	position: relative;
-	bottom: 200px;
 
 }
 
@@ -145,16 +187,21 @@ nav {
 	width: auto;
 	text-align: center;
 	padding:20px;
-	display: block;
-	background-color: #0489A9; 
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	background-color: #7ee2fc; 
 	color: #043c53;
 	margin: 20px;
 }
 .contact img{
+	display: flex;
+	justify-content: flex-end;
 	max-width:40%;
 	height: auto;
 	float: left;
-	position: absolute;
+	position: relative;
 	border: 2px solid #043C53;
 }
 
