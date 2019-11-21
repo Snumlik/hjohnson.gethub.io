@@ -99,25 +99,57 @@ nav {
 
 /*hover*/
 .weather img{
-	max-width: 80%;
+	width: 90%;
+	max-width: 922px;
 	display: block;
 	margin-left:auto;
 	margin-right:auto;
 
 }
+.weather{
+	margin: 10px auto;
+	position: relative;
+}
 
 .summary{
+	position: absolute;
+	padding: .5rem;
 	text-align: center;
-	border: 2px solid #043C53;
+	color: #043c53;
+	border: 1px solid rgb(9, 84, 114);
 	width: 200px;
 	height: 200px;
 	position: relative;
 	bottom:350px;
-	left:55px;
-	background-color: #0489A9;
+	left:65px;
+	background: radial-gradient(#eee, #7ee2fc);
+	box-shadow: 0 0 30px #111;
 	margin:20px;
 }
 
+/*forecast*/
+table, th, td{
+	margin-left: auto;
+	margin-right: auto;
+	border-collapse: collapse;
+	border: 1px #043c53;
+	color: #043c53;
+	background-color: #7ee2fc;
+	}
+
+th, td{
+	text-align: center;
+	padding: 10px;
+}
+.forecast img{
+	width: 30%;
+	height: auto;
+}
+/* trying to add background color to first row of table
+tr#headerrow{
+	background-color: #7ee2fc;
+}
+*/
 
 /*article*/
 .article{
@@ -125,7 +157,7 @@ nav {
 	text-align: wrap;
 	padding:20px;
 	display: block;
-	background-color: #0489A9; 
+	background-color: #7ee2fc; 
 	color: #043c53;
 	margin: 20px;
 }
@@ -146,7 +178,7 @@ nav {
 	text-align: center;
 	padding:20px;
 	display: block;
-	background-color: #0489A9; 
+	background-color: #7ee2fc; 
 	color: #043c53;
 	margin: 20px;
 }

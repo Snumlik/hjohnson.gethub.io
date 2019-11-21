@@ -10,7 +10,9 @@
          <link rel="stylesheet" href="CSS/style.css"> 
          <link rel="stylesheet" href="CSS/medium.css">
          <link rel="stylesheet" href="CSS/large.css">   
+         <script type="text/javascript" src="JS/banner.js"></script>
          <script type="text/javascript" src="JS/nav.js"></script>
+
 
       </head>
       <header>
@@ -22,42 +24,62 @@
             <div class="m">Keeping you updated on local Idaho weather!</div>
         </section>
     </header>
+    <body>
+
+            <body onload="isFriday()">
+
+                    <aside class="banner">Saturday- Preston Pancakes in the Park! <br/> 9:00 a.m. at the City Park.</aside>
+                
     <nav>
         <ul class="navigation">
             <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
             <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Service</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Feedback</a></li>
-            <li><a href="#">History</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
         </ul>
     </nav>
 
-   <body>
+   
+       
     <div class="pagetitle">
         <h2>Preston Idaho</h2>
     </div>   
 
     <div class="weather">
-        <picture>
-            <img src="images/4k-wallpaper-clouds-dawn-1261728.jpg" alt="Scenic Idaho">
-        </picture>
-    <div class="summary">
-        <h4>Weather Summary</h4>
-        <ul style= "list-style-type: none;">
-            <li>Currently: Sunny</li>
-            <li>High: 76 degrees F</li>
-            <li>Wind Chill: 0</li>
-            <li>Humidity: 10%</li>
-            <li>Wind Speed: 5mph</li>
-        </ul>
-        </div>
+        <img src="images/4k-wallpaper-clouds-dawn-1261728.jpg" alt="Scenic Idaho">
+        <section class="summary">
+            <h4>Weather Summary</h4>
+            <p>Current Weather: <span id="weather">Sunny</span></p>
+            <p>Today's High: <span id="high">76&deg; F</span></p>
+            <p>Humidity: <span id="humidity"> 10%</span></p>
+            <p>Wind Speed: <span id="windspeed">5 mph</span></p>
+           
+        </section>
     </div>
 
-    <div class="Parent">
-        5 day forecast
+    <div class="forecast">
+            <table style="width: 85%">
+                    <tr>
+                      <th>Mon</th>
+                      <th>Tues</th>
+                      <th>Wed</th>
+                      <th>Thurs</th>
+                      <th>Fri</th>
+                    </tr>
+                    <tr>
+                      <td class="forecastimg"><img src="images/Sun Icon.png"> </td>
+                      <td class="forecastimg"><img src="images/Sun Icon.png"> </td>
+                      <td class="forecastimg"><img src="images/Sun Icon.png"> </td>
+                      <td class="forecastimg"><img src="images/Sun Icon.png"> </td>
+                      <td class="forecastimg"><img src="images/Sun Icon.png"> </td>
+                    </tr>
+                    
+                   
+                  </table>
+        
     </div>
     
     
@@ -91,14 +113,12 @@
 
 
     <footer class="footer_end"> 
-      <div>   
-         <p class="footerParagraph">
-          &copy; 2019 | Hannah Johnson | Logan, Utah | <a id="byuiLink" href="https://www.byui.edu/online">BYU-Idaho Online Learning</a>
-         </p>
-         <p class = "bottomParagraph">
-            Last updated: <script id = "time" src="updatescript.js"></script>
-         </p>
-      </div>
-   </footer>
+        <div>   
+           <p class="footerParagraph">
+            &copy; 2019 | Hannah Johnson | Logan, Utah | <a id="byuiLink" href="https://www.byui.edu/online">BYU-Idaho Online Learning</a></p>
+           <div id="curDate" onload="currentdate()"></div>         
+        </div>
+        <script type="text/javascript" src="JS/currentdate.js"></script>
+     </footer>
 </body>
 </html>
