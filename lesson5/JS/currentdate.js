@@ -70,7 +70,10 @@ function currentdate() {
             month = "December"
             break;
     }
+    
     if(dd<10) dd='0'+dd;
- 
+    
     div.innerHTML = (day + ", " + month + " " + dd + ", " + yyyy);
 }
+
+console.log(currentdate('-'));
