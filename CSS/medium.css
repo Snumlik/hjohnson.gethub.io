@@ -1,0 +1,28 @@
+
+/* Media Query for medium + screens */
+@media only screen and (min-width: 32.5em) {
+	/*forcast*/
+	.forcast{
+		width: auto;
+		background-color: #0489A9; 
+		border: 1px solid black;
+		text-align: center;
+	}
+	.forcast table{
+		border-collapse: collapse;
+	}
+	.forcast table,th,td{
+		border: 1px solid black;
+	}
+	.forcast img{
+		width: 20px;
+	}
+	.grid {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+	}
+	.picture {
+		width: 50%;
+	}
+}
