@@ -103,6 +103,13 @@ nav {
 	
 }
 
+.footerEnd{
+	background-color: #043C53;
+	color: white;
+	text-shadow: 1px 1px #0C121D;
+	text-align: center;
+}
+
 /* Media Query for small */
 @media only screen and (max-width: 32.5em) {
 	.forcast{
