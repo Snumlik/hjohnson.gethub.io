@@ -27,4 +27,7 @@
 		font-size: larger;
 		margin-left: 17px;
 	}
+	.picture {
+		width: calc(100% / 3);
+	}
 }

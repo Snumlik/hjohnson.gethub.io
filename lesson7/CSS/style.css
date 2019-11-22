@@ -80,6 +80,21 @@ nav {
 	font-weight: 700;
 }
 
+.gallery {
+	margin: 0 auto;
+	max-width: 1200px;
+	padding: 0 1rem;
+}
+
+.gallery img[data-src] {
+	filter: blur(0.2em);
+}
+
+.gallery img {
+	filter: blur(0em);
+	transition: filter 0.5s;
+	width: 100%;
+}
 
 /* Media Query for small */
 @media only screen and (max-width: 32.5em) {
@@ -88,6 +103,14 @@ nav {
 	}
 	.contact img{
 		display: none;
+	}
+
+	.picture {
+		display: block;
+	}
+
+	.resImg {
+		max-width: 100%;
 	}
 }
 

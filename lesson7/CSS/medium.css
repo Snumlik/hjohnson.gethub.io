@@ -17,4 +17,12 @@
 	.forcast img{
 		width: 20px;
 	}
+	.grid {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+	}
+	.picture {
+		width: 50%;
+	}
 }
