@@ -10,8 +10,10 @@
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/medium.css">
     <link rel="stylesheet" href="CSS/large.css">
-    <script type="text/javascript" src="JS/nav.js"></script>
-    <script type="text/javascript" src="JS/banner.js"></script>
+    <script type="text/javascript" src="scripts/banner.js"></script>
+    <script type="text/javascript" src="scripts/nav.js"></script>
+    
+
 </head>
 
 <body>
@@ -36,7 +38,7 @@
                 <li><a href="https://snumlik.github.io/lesson6/preston-6.html">Preston</a></li>
                 <li><a href="#">Soda Springs</a></li>
                 <li><a href="#">Fish Haven</a></li>
-                <li><a href="#">Storm Center</a></li>
+                <li><a href="https://snumlik.github.io/lesson8/stormcenter/stormcenter.html">Storm Center</a></li>
                 <li><a href="https://snumlik.github.io/lesson7/gallery-7.html">Gallery</a></li>
             </ul>
         </nav>
@@ -48,11 +50,11 @@
             <img src="images/4k-wallpaper-clouds-dawn-1261728.jpg" alt="Scenic Idaho">
             <section class="summary">
                 <h4>Weather Summary</h4>
-                <p>Current Weather: <span id="weather">Sunny</span></p>
-                <p>Today's High: <span id="high">76&deg; F</span></p>
-                <p>Humidity: <span id="humidity"> 10%</span></p>
-                <p>Wind Speed: <span id="windspeed">5 mph</span></p>
-
+                <p>Current Weather: <span id="imagesrc"></span> &nbsp; <img src="" alt "" id="weather icon"></p>
+                <p>Current Temp: <span id="curr-temp"></span>&deg; F</p>
+                <p>Humidity: <span id="humidity"></span>%</p>
+                <p>Wind Speed: <span id="windspeed"></span></p>
+                <script type= "text/javascript" src="scripts/weatherapi.js"></script>
             </section>
         </div>
 
