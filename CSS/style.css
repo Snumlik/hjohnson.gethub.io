@@ -103,6 +103,23 @@ nav {
 	
 }
 
+/* copied from kameron
+.contentboxtable{
+	display: none;} //small
+
+//center table medium or large
+.contentboxtable{
+	display:block;
+	padding: 5px;
+	background-color: light grey;
+	border-radius: 0.5re;
+	margin: 0.5rem;
+	border: 1px solid black;}
+
+.fivedayh4{
+	margin:auto;
+} //table itself
+
 .footerEnd{
 	background-color: #043C53;
 	color: white;

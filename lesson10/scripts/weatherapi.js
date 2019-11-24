@@ -1,17 +1,16 @@
-const apiURL= "https://api.openweathermap.org/data/2.5/weather?id=2172797&unitsimperial&APPID=c7f64fca86e4ff703aa96a3352506b"
+const apiURL= "https://api.openweathermap.org/data/2.5/weather?id=5604473&unitsimperial&APPID=c7f64c4fca86e4ff703aa96a3352506b";
 fetch(apiURL)
-    .then{(response)=> response.json()}
-    .then{(jsObject)=>{
+    .then((response)=> response.json())
+    .then((jsObject)=>{
         console.log(jsObject);
 
-        document.getElementById('curr-city').textContent = jsObject.name;
-        document.getElementById('curr-temp').textContent = jsObject.main.temp;
+        document.getElementById('speed').textContent = jsObject.wind.speed;
+        document.getElementById('currently').textContent = jsObject.main.temp;
+        document.getElementById('humidity').textContent = jsObject.main.humidity;
+        document.getElementById('imagesrc').textContent = jsObject.weather[0].main;
+
   
 
-    const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon+'.png'; //note the concatenation
-    const desc = jsObject.weather[0].description; //note how we reference the weather array
-    document.getElementById('imagesrc').textContent=imagesrc; //informational specification only
-    document.getElementById('icon').setAttribute('alt', imagesrc); //focus on the setAttribute() method
-    document.getElementById('icon').setAttribute('alt' desc);
+   
 
 });
