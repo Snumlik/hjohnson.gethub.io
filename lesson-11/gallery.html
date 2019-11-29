@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="CIT230 Web Frontend Development, BYU-Idaho. Student: Hannah Johnson">
+    <title>Hannah's Portal</title>
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/medium.css">
+    <link rel="stylesheet" href="CSS/large.css">
+    <script type="text/javascript" src="JS/banner.js"></script>
+    <script type="text/javascript" src="JS/nav.js"></script>
+    <script type="text/javascript" src="JS/lazyload.js" defer></script>
+
+
+</head>
+
+<body>
+
+    <body onload="isFriday()">
+
+        <aside class="banner">Saturday- Preston Pancakes in the Park! <br /> 9:00 a.m. at the City Park.</aside>
+
+        <header>
+            <picture>
+                <img src="images/Sun Icon.png" alt="The world logo">
+            </picture>
+            <section class="headings">
+                <h1>WebDev Weather</h1>
+                <div class="m">Keeping you updated on local Idaho weather!</div>
+            </section>
+        </header>
+
+        <nav>
+            <ul class="navigation">
+                <ul class="navigation">
+                    <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                    <li><a href="https://snumlik.github.io/lesson-11/home.html">Home</a></li>
+                    <li><a href="https://snumlik.github.io/lesson-11/preston.html">Preston</a></li>
+                    <li><a href="https://snumlik.github.io/lesson-11/sodasprings.html">Soda Springs</a></li>
+                    <li><a href="https://snumlik.github.io/lesson-11/fishhaven.html">Fish Haven</a></li>
+                    <li><a href="https://snumlik.github.io/lesson8/stormcenter/stormcenter.html">Storm Center</a></li>
+                    <li><a href="https://snumlik.github.io/lesson-11/gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <div class="gallery">
+            <div class="grid">
+                <picture class="picture">
+                    <img src="images/placeholder.png" data-src="images/field.jpg" alt="Sunny Field" class="resImg">
+                </picture>
+                <picture class="picture">
+                    <img src="images/placeholder.png" data-src="images/lightning.jpg" alt="Lightning Storm"
+                        class="resImg">
+                </picture>
+                <picture class="picture">
+                    <img src="images/placeholder.png" data-src="images/snow.jpg" alt="Snowfall" class="resImg">
+                </picture>
+                <picture class="picture">
+                    <img src="images/placeholder.png" data-src="images/rainbows.jpg" alt="Rainbow" class="resImg">
+                </picture>
+                <picture class="picture">
+                    <img src="images/placeholder.png" data-src="images/waves.jpg" alt="Big Wave" class="resImg">
+                </picture>
+                <picture class="picture">
+                    <img src="images/placeholder.png" data-src="images/meteor.jpg" alt="Meteor Shower" class="resImg">
+                </picture>
+            </div>
+        </div>
+
+        <footer class="footer_end">
+            <div>
+                <p class="footerParagraph">
+                    &copy; 2019 | Hannah Johnson | Logan, Utah | <a id="byuiLink"
+                        href="https://www.byui.edu/online">BYU-Idaho Online Learning</a></p>
+                <div id="curDate" onload="currentdate()"></div>
+            </div>
+            <script type="text/javascript" src="JS/currentdate.js"></script>
+        </footer>
+    </body>
+
+</html>
