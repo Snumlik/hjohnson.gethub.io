@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="CIT230 Web Frontend Development, BYU-Idaho. Student: Hannah Johnson">
+    <title>Hannah's Portal</title>
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/medium.css">
+    <link rel="stylesheet" href="CSS/large.css">
+    <script type="text/javascript" src="scripts/banner.js"></script>
+    <script type="text/javascript" src="scripts/nav.js"></script>
+    
+
+</head>
+
+<body>
+
+    <body onload="isFriday()">
+
+        <aside class="banner">Saturday- Preston Pancakes in the Park! <br /> 9:00 a.m. at the City Park.</aside>
+
+        <header>
+            <picture>
+                <img src="images/Sun Icon.png" alt="The world logo">
+            </picture>
+            <section class="headings">
+                <h1>WebDev Weather</h1>
+                <div class="m">Keeping you updated on local Idaho weather!</div>
+            </section>
+        </header>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="https://snumlik.github.io/">Home</a></li>
+                <li><a href="https://snumlik.github.io/lesson6/preston-6.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="https://snumlik.github.io/lesson8/stormcenter/stormcenter.html">Storm Center</a></li>
+                <li><a href="https://snumlik.github.io/lesson7/gallery-7.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <div class="pagetitle">
+            <h2>Preston Idaho</h2>
+        </div>
+
+        <div class="weather">
+            <img src="images/4k-wallpaper-clouds-dawn-1261728.jpg" alt="Scenic Idaho">
+            <section class="summary">
+                <h4>Weather Summary</h4>
+                <p>Current Weather: <span id="imagesrc"></span> &nbsp;
+                <p>Current Temp: <span id="currently"></span>&deg; F</p>
+                <p>Humidity: <span id="humidity"></span>%</p>
+                <p>Wind Speed: <span id="speed"></span>mph</p>
+                <p>Wind Chill: <span id="chill"></span></p>
+               
+            </section>
+        </div>
+
+        <div class="forecast">
+            <table style="width: 85%">
+                <thead>
+                    <caption>5 Day Forcast</caption>
+                </thead>
+                <tbody>
+                <tr>
+                    <th id="day1"></th> day</th>
+                    <th>Tues</th>
+                    <th>Wed</th>
+                    <th>Thurs</th>
+                    <th>Fri</th>
+                </tr>
+                <tr>
+                    <td id="temp1"> &#176;fa</td>
+                    <td class="forecastimg"><img src="images/Sun Icon.png"> </td>
+                    <td class="forecastimg"><img src="images/Sun Icon.png"> </td>
+                    <td class="forecastimg"><img src="images/Sun Icon.png"> </td>
+                    <td class="forecastimg"><img src="images/Sun Icon.png"> </td>
+                    <td class="forecastimg"><img src="images/Sun Icon.png"> </td>
+                </tr>
+                </tbody>
+
+
+            </table>
+
+        </div>
+
+
+        <div class="article">
+            <ul style="list-style-type: none;">
+                <li>
+                    <h3>Saturday Picnic</h3>
+                </li>
+                <li>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </li>
+                <picture>
+                    <img src="images/backpack-blonde-hair-blur-214574.jpg" alt="Picnic">
+                </picture>
+        </div>
+
+
+        <div class="Parent">
+            <div class="contact">
+                <img src="images/idaho.jpg" alt="Map">
+                <ul style="list-style-type:none;">
+                    <li>
+                        <h3>Contact Us</h3>
+                    </li>
+                    <li>(999)999-999</li>
+                    <li>1 N 1 E</li>
+                    <li>Preston, ID 83263</li>
+                    <li>contactus@webdevweather.com</li>
+                </ul>
+            </div>
+        </div>
+
+
+
+
+
+
+        <footer class="footer_end">
+            <div>
+                <p class="footerParagraph">
+                    &copy; 2019 | Hannah Johnson | Logan, Utah | <a id="byuiLink"
+                        href="https://www.byui.edu/online">BYU-Idaho Online Learning</a></p>
+                <div id="curDate" onload="currentdate()"></div>
+            </div>
+            <script type="text/javascript" src="JS/currentdate.js"></script>
+        </footer>
+        <script type= "text/javascript" src="scripts/weatherapi.js"></script>
+        <script type= "text/javascript" src="scripts/windchill.js"></script>
+    </body>
+
+</html>
