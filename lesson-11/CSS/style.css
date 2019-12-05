@@ -23,20 +23,18 @@ header img {
 	height: auto;
 }
 
-section {
+.towns section {
 	border: 2px solid black;
 	background-color: aliceblue;
-	max-width: 25%;
+	width: 100%;
 	margin: 5px;
 }
 
 .towns {
-	display: flex;
-	margin-left: 18%;
-}
-
-.towns div {
 	text-align: center;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 1rem;
 }
 
 .towns h3 {
@@ -46,7 +44,6 @@ section {
 .towns img {
 	max-width: 100%;
 }
-
 
 .headings {
 	display: flex;
