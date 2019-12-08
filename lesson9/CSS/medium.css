@@ -17,4 +17,13 @@
 	.forcast img{
 		width: 20px;
 	}
+	.towns {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+	}
+	.towns section {
+		width: 45%;
+	}
+	
 }

@@ -27,4 +27,8 @@
 		font-size: larger;
 		margin-left: 17px;
 	}
+
+	.towns section {
+		width: calc(90% / 3);
+	}
 }
