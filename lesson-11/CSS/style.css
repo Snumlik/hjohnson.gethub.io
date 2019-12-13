@@ -139,6 +139,7 @@ nav {
 .summary{
 	position: absolute;
 	padding: .5rem;
+	padding-bottom: 2rem;
 	text-align: center;
 	color: #043c53;
 	border: 1px solid rgb(9, 84, 114);
