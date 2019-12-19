@@ -153,6 +153,21 @@ nav {
 	margin:20px;
 }
 
+.eventsDiv{
+	margin: 10px auto;
+}
+
+.eventsSec{
+	padding: .5rem;
+	text-align: center;
+	color: #043c53;
+	border: 1px solid rgb(9, 84, 114);
+	width: auto;
+	height: auto;
+	background: radial-gradient(#eee, #7ee2fc);
+	margin:20px;
+}
+
 /*forecast*/
 table, th, td{
 	margin-left: auto;

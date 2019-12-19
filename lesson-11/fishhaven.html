@@ -12,8 +12,7 @@
     <link rel="stylesheet" href="CSS/large.css">
     <script type="text/javascript" src="JS/banner.js"></script>
     <script type="text/javascript" src="JS/nav.js"></script>
-
-
+    <script type="text/javascript" src="JS/town_events.js"></script>
 </head>
 
 <body>
@@ -60,30 +59,37 @@
         </div>
 
         <div class="forecast">
-                <table style="width: 85%">
-                    <tr>
-                        <th id="forDay1"></th>
-                        <th id="forDay2"></th>
-                        <th id="forDay3"></th>
-                        <th id="forDay4"></th>
-                        <th id="forDay5"></th>
-                    </tr>
-                    <tr>
-                        <td class="forecastimg"><img id="forImg1" src=""></td>
-                        <td class="forecastimg"><img id="forImg2" src=""></td>
-                        <td class="forecastimg"><img id="forImg3" src=""></td>
-                        <td class="forecastimg"><img id="forImg4" src=""></td>
-                        <td class="forecastimg"><img id="forImg5" src=""></td>
-                    </tr>
-                    <tr>
-                        <td id="forTemp1"></td>
-                        <td id="forTemp2"></td>
-                        <td id="forTemp3"></td>
-                        <td id="forTemp4"></td>
-                        <td id="forTemp5"></td>
-                    </tr>
-                </table>
-            </div>
+            <table style="width: 85%">
+                <tr>
+                    <th id="forDay1"></th>
+                    <th id="forDay2"></th>
+                    <th id="forDay3"></th>
+                    <th id="forDay4"></th>
+                    <th id="forDay5"></th>
+                </tr>
+                <tr>
+                    <td class="forecastimg"><img id="forImg1" src=""></td>
+                    <td class="forecastimg"><img id="forImg2" src=""></td>
+                    <td class="forecastimg"><img id="forImg3" src=""></td>
+                    <td class="forecastimg"><img id="forImg4" src=""></td>
+                    <td class="forecastimg"><img id="forImg5" src=""></td>
+                </tr>
+                <tr>
+                    <td id="forTemp1"></td>
+                    <td id="forTemp2"></td>
+                    <td id="forTemp3"></td>
+                    <td id="forTemp4"></td>
+                    <td id="forTemp5"></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="eventsDiv">
+            <section class="eventsSec">
+                <h4>Upcoming Events</h4>
+                <p class="eventInfo"></p>
+            </section>
+        </div>
 
         <div class="article">
             <ul style="list-style-type: none;">
