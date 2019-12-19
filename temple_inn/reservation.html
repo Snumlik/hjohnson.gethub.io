@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="CIT230 Web Frontend Development, BYU-Idaho. Student: Hannah Johnson">
+    <title>Hannah's Portal</title>
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/medium.css">
+    <link rel="stylesheet" href="CSS/large.css">
+    <script type="text/javascript" src="JS/banner.js"></script>
+    <script type="text/javascript" src="JS/nav.js"></script>
+    <script type="text/javascript" src="JS/town_events.js"></script>
+    <script>
+        var city = "Preston";
+    </script>
+
+</head>
+
+<body>
+
+        <header>
+            <picture>
+                <a href="https://snumlik.github.io/temple_inn/index.html">
+                <img src="images/temple logo (1).jpg" alt="Temple Inn & Suites logo">
+                </a>
+            </picture>
+        
+            <section class="headings">
+                <h1>Temple Inn & Suites</h1>
+                <div class="m">A place to stay if the temple's far away.</div>
+            </section>
+        </header>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="https://snumlik.github.io/temple_inn/index.html">Home</a></li>
+                <li><a href="https://snumlik.github.io/temple_inn/temple.html">Temple</a></li>
+                <li><a href="https://snumlik.github.io/temple_inn/Reservation.html">Reservation</a></li>
+                <li><a href="https://snumlik.github.io/temple_inn/Services.html">Services</a></li>
+                <li><a href="https://snumlik.github.io/temple_inn/Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="container">
+            <fieldset>
+                <label for="inputname">Full Name:
+                    <input type="text" name="fullname" required pattern="[A-Za-z]"><br>
+                </label>
+                <label for="inputemail">Email:
+                    <input type="email" name="email" placeholder="user@email.com"><br>
+                </label>
+                <label for="inputphone">Phone Number:
+                    <input type="tel" name="phonenum" required placeholder="###-###-####"><br>
+                </label>
+                <label for="inputzip">Zip Code:
+                    <input type="number" name="zip" required pattern="(\d{5}(\-]\d{4})?)"
+                        autocomplete="shipping postal-codep"><br>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <label for="inputdate">Storm Date:
+                    <input type="date" name="stormdate"><br>
+                </label>
+                <label for="inputtype">Storm Type:
+                    <input list="stormlist" name="stormtype"><br>
+                </label>
+                <datalist id="stormlist">
+                    <option value="Flash Flood">
+                    <option value="Hail">
+                    <option value="Hurricane">
+                    <option value="Thunderstorm">
+                    <option value="Tornado">
+                    <option value="Sharknado">
+                </datalist>
+                <label for="inputseverity">Storm Severity:
+                    <input type="range" name="stormseverity" value="5" min="0" max="10" step="1" list="tickmarks"
+                        oninput="adjustSeverity(this.value)" onchange="adjustSeverity(this.value)"><span
+                        id="severityvalue">5</span><br>
+                </label>
+                <datalist id="tickmarks">
+                    <option value="0">
+                    <option value="1">
+                    <option value="2">
+                    <option value="3">
+                    <option value="4">
+                    <option value="5">
+                    <option value="6">
+                    <option value="7">
+                    <option value="8">
+                    <option value="9">
+                    <option value="10">
+                </datalist>
+                <label for="inputregion">Storm Region:
+                    <select name="stormregion">
+                        <option value="initselect" disabled=true selected="selected">Select Region...</option>
+                        <option value="preston">Preston</option>
+                        <option value="sodasprings">Soda Springs</option>
+                        <option value="fishhaven">Fish Haven</option>
+                    </select><br>
+                </label>
+                <label for="inputuserdanger">User In-Danger Level:
+                    <div class="selection">
+                        <label for="dangeryes"><input type="radio" id="dangeryes" name="userdanger" value="yes" checked>
+                            Yes
+                        </label>
+                    </div>
+
+                    <div class="selection">
+                        <label for="dangerno"><input type="radio" id="dangerno" name="userdanger" value="no" checked> No
+                        </label>
+                    </div>
+
+                    <div class="selection">
+                        <label for="dangermaybe"><input type="radio" id="dangermaybe" name="userdanger" value="maybe"
+                                checked> Maybe
+                        </label>
+                    </div>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <label for="inputcomments">Additional Comments:
+                    <textarea rows="4" cols="50" name="comment">Enter text here...</textarea><br>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <label for="submitbutton">
+                    <input type="submit" name="submitbutton" value="Submit">
+                </label>
+            </fieldset>
+        </div>
+
+        <footer class="footer">
+            <div>
+                <p class="footerParagraph">
+                    &copy; 2019 | Hannah Johnson | Logan, Utah | <a id="byuiLink"
+                        href="https://www.byui.edu/online">BYU-Idaho Online Learning</a></p>
+                <div id="curDate" onload="currentdate()"></div>
+            </div>
+            <script type="text/javascript" src="JS/currentdate.js"></script>
+        </footer>
+        
+    </body>
+
+</html>
