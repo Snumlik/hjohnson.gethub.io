@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="CIT230 Web Frontend Development, BYU-Idaho. Student: Hannah Johnson">
+    <title>Hannah's Portal</title>
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/medium.css">
+    <link rel="stylesheet" href="CSS/large.css">
+    <script type="text/javascript" src="JS/banner.js"></script>
+    <script type="text/javascript" src="JS/nav.js"></script>
+    <script type="text/javascript" src="JS/town_events.js"></script>
+    <script>
+        var city = "Preston";
+    </script>
+
+</head>
+
+<body>
+
+        <header>
+            <picture>
+                <a href="https://snumlik.github.io/temple_inn/index.html">
+                <img src="images/temple logo (1).jpg" alt="Temple Inn & Suites logo">
+                </a>
+            </picture>
+        
+            <section class="headings">
+                <h1>Temple Inn & Suites</h1>
+                <div class="m">A place to stay if the temple's far away.</div>
+            </section>
+        </header>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="https://snumlik.github.io/temple_inn/index.html">Home</a></li>
+                <li><a href="https://snumlik.github.io/temple_inn/temple.html">Temple</a></li>
+                <li><a href="https://snumlik.github.io/temple_inn/Reservation.html">Reservation</a></li>
+                <li><a href="https://snumlik.github.io/temple_inn/Services.html">Services</a></li>
+                <li><a href="https://snumlik.github.io/temple_inn/Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+              
+        <div class="pagetitle">
+                <h2>Welcome to the family!</h2>
+            </div>
+
+        <div class="headerpic">
+            <img src="images/missionary.png" alt="Missionary">
+        </div>
+   
+
+
+        <div class="article">
+            <h3>Temple Inn & Suites</h3>
+            <p>Temple Inn & Suites stands as an international hotel chain working closely with The Church of Jesus Christ of Latter-day Saints.  With locations placed near many of the Church’s temples, we'll cater to you on your next temple trip.  </p>
+
+        </div>
+
+        <div class="templearticle">
+           
+            <h3>Temple Spotlight: Oquirrh Mountain Temple</h3> 
+            <img src="images/Oquirrhtem.jpg" alt="Oquirrh Temple">           
+            <p> The Oquirrh Mountain Temple, located in South Jordan, Utah in the United States, was dedicated August 2009 by Thomas S. Monson making it the 13th temple built in Utah and the fourth built in the Salt Lake Valley.  The temple spire was truck by lightening on June 13, 2009, during the public open house.  A replacement statue was installed on August 11, 2009, just 10 days prior to the dedicatory services.  The Oquirrh Moutain Temple sits on a bluff in the Daybreak community.  Within a few minutes walk from the temple, patrons have access to shopping, trails, and recreation around Daybreak Lake. </p>
+            <img src="images/married.jpg" alt="Bride and Groom at Oquirrh Mt Temple">
+            <p><a id="Oquirrh Mt Temple Refrence" href="https://www.churchofjesuschrist.org/temples/details/oquirrh-mountain-utah-temple?lang=eng">Click here</a> for more info about the Oquirrh Mountain Temple.</p>
+                  
+        </div>
+
+
+
+
+        <footer class="footer">
+            <div>
+                <p class="footerParagraph">
+                    &copy; 2019 | Hannah Johnson | Logan, Utah | <a id="byuiLink"
+                        href="https://www.byui.edu/online">BYU-Idaho Online Learning</a></p>
+                <div id="curDate" onload="currentdate()"></div>
+            </div>
+            <script type="text/javascript" src="JS/currentdate.js"></script>
+        </footer>
+        
+    </body>
+
+</html>
