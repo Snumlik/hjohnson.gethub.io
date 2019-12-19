@@ -1,30 +1,30 @@
 <!DOCTYPE HTML>
 <html lang="en-us">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="CIT230 Web Frontend Development, BYU-Idaho. Student: Hannah Johnson">
-        <title>Hannah's Portal</title> 
-        <link rel="stylesheet" href="CSS/normalize.css">
-        <link rel="stylesheet" href="CSS/style.css">   
-        <link rel="stylesheet" href="CSS/medium.css">  
-        <link rel="stylesheet" href="CSS/large.css">  
-        <script type="text/javascript" src="JS/storm.js"></script>
-        <script type="text/javascript" src="JS/nav.js"></script>
-        <script type="text/javascript" src="JS/banner.js"></script>
-        <script type="text/javascript" src="JS/getcurrentdate.js"></script>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="CIT230 Web Frontend Development, BYU-Idaho. Student: Hannah Johnson">
+    <title>Hannah's Portal</title>
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/medium.css">
+    <link rel="stylesheet" href="CSS/large.css">
+    <script type="text/javascript" src="JS/storm.js"></script>
+    <script type="text/javascript" src="JS/nav.js"></script>
+    <script type="text/javascript" src="JS/banner.js"></script>
+    <script type="text/javascript" src="JS/getcurrentdate.js"></script>
+</head>
 
-    <body>
+<body>
 
     <body onload="isFriday()">
 
-    <aside class="banner">Saturday- Preston Pancakes in the Park! <br/> 9:00 a.m. at the City Park.</aside>
+        <aside class="banner">Saturday- Preston Pancakes in the Park! <br /> 9:00 a.m. at the City Park.</aside>
 
-    <header>
+        <header>
             <picture>
-                <img src="images/Sun Icon.png" alt="The world logo">
+                <img src="Images/Sun Icon.png" alt="The world logo">
             </picture>
             <section class="headings">
                 <h1>WebDev Weather</h1>
@@ -43,7 +43,7 @@
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
- 
+
         <div class="container">
             <fieldset>
                 <label for="inputname">Full Name:
@@ -56,7 +56,8 @@
                     <input type="tel" name="phonenum" required placeholder="###-###-####"><br>
                 </label>
                 <label for="inputzip">Zip Code:
-                    <input type="number" name="zip" required pattern="(\d{5}(\-]\d{4})?)" autocomplete="shipping postal-codep"><br>
+                    <input type="number" name="zip" required pattern="(\d{5}(\-]\d{4})?)"
+                        autocomplete="shipping postal-codep"><br>
                 </label>
             </fieldset>
 
@@ -76,7 +77,9 @@
                     <option value="Sharknado">
                 </datalist>
                 <label for="inputseverity">Storm Severity:
-                    <input type="range" name="stormseverity" value="5" min="0" max="10" step="1" list="tickmarks" oninput="adjustSeverity(this.value)" onchange="adjustSeverity(this.value)"><span id="severityvalue">5</span><br>
+                    <input type="range" name="stormseverity" value="5" min="0" max="10" step="1" list="tickmarks"
+                        oninput="adjustSeverity(this.value)" onchange="adjustSeverity(this.value)"><span
+                        id="severityvalue">5</span><br>
                 </label>
                 <datalist id="tickmarks">
                     <option value="0">
@@ -101,19 +104,21 @@
                 </label>
                 <label for="inputuserdanger">User In-Danger Level:
                     <div class="selection">
-                        <label for="dangeryes"><input type ="radio" id="dangeryes" name="userdanger" value="yes" checked> Yes
+                        <label for="dangeryes"><input type="radio" id="dangeryes" name="userdanger" value="yes" checked>
+                            Yes
                         </label>
                     </div>
-    
+
                     <div class="selection">
-                        <label for="dangerno"><input type ="radio" id="dangerno" name="userdanger" value="no" checked> No
+                        <label for="dangerno"><input type="radio" id="dangerno" name="userdanger" value="no" checked> No
                         </label>
                     </div>
-    
+
                     <div class="selection">
-                        <label for="dangermaybe"><input type ="radio" id="dangermaybe" name="userdanger" value="maybe" checked> Maybe
+                        <label for="dangermaybe"><input type="radio" id="dangermaybe" name="userdanger" value="maybe"
+                                checked> Maybe
                         </label>
-                     </div>
+                    </div>
                 </label>
             </fieldset>
 
@@ -130,15 +135,15 @@
             </fieldset>
         </div>
 
-    <footer class="footer_end"> 
-      <div>   
-         <p class="footerParagraph">
-          &copy; 2019 | Hannah Johnson | Logan, Utah | <a id="byuiLink" href="https://www.byui.edu/online">BYU-Idaho Online Learning</a>
-         </p>
-         <p class = "displayDate">
-                <footer onload="displayDate()">
-         </p>
-      </div>
-   </footer>
-</body>
+        <footer>
+            <div class="footerEnd">
+                <p class="footerParagraph">
+                    &copy; 2019 | Hannah Johnson | Logan, Utah | <a id="byuiLink"
+                        href="https://www.byui.edu/online">BYU-Idaho Online Learning</a></p>
+                <div id="curDate" onload="currentdate()"></div>
+            </div>
+            <script type="text/javascript" src="JS/currentdate.js"></script>
+        </footer>
+    </body>
+
 </html>

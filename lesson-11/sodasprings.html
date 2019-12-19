@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/medium.css">
     <link rel="stylesheet" href="CSS/large.css">
-    <script type="text/javascript" src="scripts/banner.js"></script>
-    <script type="text/javascript" src="scripts/nav.js"></script>
-    
+    <script type="text/javascript" src="JS/banner.js"></script>
+    <script type="text/javascript" src="JS/nav.js"></script>
+
 
 </head>
 
@@ -51,42 +51,38 @@
             <section class="summary">
                 <h4>Weather Summary</h4>
                 <p>Current Weather: <span id="imagesrc"></span> &nbsp;
-                <p>Current Temp: <span id="currently"></span>&deg; F</p>
-                <p>Humidity: <span id="humidity"></span>%</p>
-                <p>Wind Speed: <span id="speed"></span>mph</p>
-                <p>Wind Chill: <span id="chill"></span></p>
-               
+                    <p>Current Temp: <span id="currently"></span>&deg; F</p>
+                    <p>Humidity: <span id="humidity"></span>%</p>
+                    <p>Wind Speed: <span id="speed"></span>mph</p>
+                    <p>Wind Chill: <span id="chill"></span></p>
             </section>
         </div>
 
         <div class="forecast">
             <table style="width: 85%">
-                <thead>
-                    <caption>5 Day Forcast</caption>
-                </thead>
-                <tbody>
                 <tr>
-                    <th id="day1"></th> day</th>
-                    <th>Tues</th>
-                    <th>Wed</th>
-                    <th>Thurs</th>
-                    <th>Fri</th>
+                    <th id="forDay1"></th>
+                    <th id="forDay2"></th>
+                    <th id="forDay3"></th>
+                    <th id="forDay4"></th>
+                    <th id="forDay5"></th>
                 </tr>
                 <tr>
-                    <td id="temp1"> &#176;fa</td>
-                    <td class="forecastimg"><img src="images/Sun Icon.png"> </td>
-                    <td class="forecastimg"><img src="images/Sun Icon.png"> </td>
-                    <td class="forecastimg"><img src="images/Sun Icon.png"> </td>
-                    <td class="forecastimg"><img src="images/Sun Icon.png"> </td>
-                    <td class="forecastimg"><img src="images/Sun Icon.png"> </td>
+                    <td class="forecastimg"><img id="forImg1" src=""></td>
+                    <td class="forecastimg"><img id="forImg2" src=""></td>
+                    <td class="forecastimg"><img id="forImg3" src=""></td>
+                    <td class="forecastimg"><img id="forImg4" src=""></td>
+                    <td class="forecastimg"><img id="forImg5" src=""></td>
                 </tr>
-                </tbody>
-
-
+                <tr>
+                    <td id="forTemp1"></td>
+                    <td id="forTemp2"></td>
+                    <td id="forTemp3"></td>
+                    <td id="forTemp4"></td>
+                    <td id="forTemp5"></td>
+                </tr>
             </table>
-
         </div>
-
 
         <div class="article">
             <ul style="list-style-type: none;">
@@ -121,11 +117,6 @@
             </div>
         </div>
 
-
-
-
-
-
         <footer class="footer_end">
             <div>
                 <p class="footerParagraph">
@@ -135,8 +126,8 @@
             </div>
             <script type="text/javascript" src="JS/currentdate.js"></script>
         </footer>
-        <script type= "text/javascript" src="scripts/weatherapi.js"></script>
-        <script type= "text/javascript" src="scripts/windchill.js"></script>
+        <script type="text/javascript" src="JS/weatherapi.js"></script>
+        <!--<script type="text/javascript" src="JS/windchill.js"></script>-->
     </body>
 
 </html>
