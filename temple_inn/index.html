@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="CIT230 Web Frontend Development, BYU-Idaho. Student: Hannah Johnson">
+    <title>Hannah's Portal</title>
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/medium.css">
+    <link rel="stylesheet" href="CSS/large.css">
+    <script type="text/javascript" src="scripts/banner.js"></script>
+    <script type="text/javascript" src="scripts/nav.js"></script>
+    <script type="text/javascript" src="scripts/town_events.js"></script>
+    <script>
+        var city = "Preston";
+    </script>
+
+</head>
+
+<body>
+
+        <header>
+            <picture>
+                <a href="https://snumlik.github.io/temple_inn/index.html">
+                <img src="images/temple logo (1).jpg" alt="Temple Inn & Suites logo">
+                </a>
+            </picture>
+        
+            <section class="headings">
+                <h1>Temple Inn & Suites</h1>
+                <div class="m">A place to stay if the temple's far away.</div>
+            </section>
+        </header>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="https://snumlik.github.io/temple_inn/index.html">Home</a></li>
+                <li><a href="https://snumlik.github.io/temple_inn/temple.html">Temple</a></li>
+                <li><a href="https://snumlik.github.io/temple_inn/Reservation.html">Reservation</a></li>
+                <li><a href="https://snumlik.github.io/temple_inn/Services.html">Services</a></li>
+                <li><a href="https://snumlik.github.io/temple_inn/Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+              
+        <div class="pagetitle">
+                <h2>Welcome to the family!</h2>
+            </div>
+
+        <div class="headerpic">
+            <img src="images/Temple Header.jpg" alt="Temple">
+        </div>
+   
+
+
+        <div class="article">
+            <h3>Temple Inn & Suites</h3>
+            <p>Temple Inn & Suites stands as an international hotel chain working closely with The Church of Jesus Christ of Latter-day Saints.  With locations placed near many of the Church’s temples, we'll cater to you on your next temple trip.  </p>
+
+        </div>
+
+        <div class="templearticle">
+            <h3>Oquirrh Mountain Temple</h3>
+            <img scr= "images/temple_inn.jpg" alt="picture">
+            <p> this is a paragraph about the oquirrh mountain temple</p>
+        </div>
+
+
+
+        <footer class="footer">
+            <div>
+                <p class="footerParagraph">
+                    &copy; 2019 | Hannah Johnson | Logan, Utah | <a id="byuiLink"
+                        href="https://www.byui.edu/online">BYU-Idaho Online Learning</a></p>
+                <div id="curDate" onload="currentdate()"></div>
+            </div>
+            <script type="text/javascript" src="JS/currentdate.js"></script>
+        </footer>
+        
+    </body>
+
+</html>

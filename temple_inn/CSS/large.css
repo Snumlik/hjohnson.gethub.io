@@ -1,0 +1,57 @@
+
+/* Larger viewports */
+@media only screen and (min-width: 60em) {
+	.navigation {
+		display: flex;
+	}
+	.navigation li:first-child {
+		display: none;
+	}
+	.navigation li {
+		display: block;
+		flex: 1 1 100%;
+	}
+	.navigation li a {
+		color: #FFFFF8;
+	}
+	header img {
+		display: block;
+		width: 50%;display: flex;
+		align-items:center;
+		justify-content:left;
+	}
+
+	.headings h1 {
+		font-size: 3rem;
+		display: flex;
+	align-items:center;
+	justify-content:left;
+	}
+
+	.m {
+		letter-spacing: 1.5pt;
+		font-size: larger;
+		margin-left: 17px;
+	}
+	.article{
+		width: auto;
+		text-align: center;
+		display: inline-block;
+		padding:20px;
+		display: flex;
+		flex-direction: row;
+		flex-flow: column wrap;
+		align-items: center;
+		justify-content: center;
+		flex: 2 0 0; 
+		color: #323a45;
+		margin: 5% 10%;
+		max-width: 400px;
+		position: relative;
+	}
+
+	
+	.towns section {
+		width: calc(90% / 3);
+	}
+}
