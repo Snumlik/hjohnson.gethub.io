@@ -48,28 +48,37 @@
         
         <div class="pagetitle">
 
-         <header1><!--I want this in a separate section, under the stripes-->
+        <!--I want this in a separate section, under the stripes-->
             <img src="Images/Favicon.jpg" alt="Scoots">
-            <h3>Discover Cozumel at your own speed.</h3>
-          </header1>
-
-        </div>
-      
-
-        <div class="pagetitle">
             <h2>Contact Us</h2>
 
         </div>
+    
 
-    <div class="headerpic">
-        <img src="images/Temple Header.jpg" alt="Temple">
-    </div>
-
-
-    <p>Info on contacting us here</p>
-    <p>stuuuuuuuuufs</p>
-    <p>maybe some social media links?</p>
-
+   
+    <div class="container">
+        <form action="action_page.php">
+      
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">Mexico</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+      
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+      
+        </form>
+      </div>
 
 
 
