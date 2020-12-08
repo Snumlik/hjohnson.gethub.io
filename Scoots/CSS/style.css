@@ -1,0 +1,303 @@
+body {
+	background: url(/img/cream_dust.png) repeat 0 0;
+	padding: 0;
+	margin: 0;
+	font-family:'Playfair Display', serif;
+}
+
+aside {
+	background-color: #ffdd8c;
+	text-align: center;
+}
+
+header {
+	background: repeating-linear-gradient( 45deg, #ff952b, #ff952b 10px,
+	 #FF7B0F 10px, #FF7B0F 20px);
+	padding: 15px 0;
+	display: flex;
+	align-items:Left;
+	justify-content:left;
+	font-family:'Source Sans Pro', sans-serif;
+}
+
+/*header img {
+	width: 80px;
+	height: auto;
+}*/
+
+.towns section {
+	border: 2px solid black;
+	background-color: aliceblue;
+	width: 100%;
+	margin: 5px;
+}
+
+.towns {
+	text-align: center;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 1rem;
+}
+
+.towns h3 {
+	font-size: small;
+}
+
+.towns img {
+	max-width: 100%;
+}
+
+.headings {
+	display: flex;
+	flex-direction: column;
+}
+
+.headings h1 {
+	font-size: 1.6rem;
+	margin: 0 0 0 17px;
+	color: white;
+	text-shadow: 2px 2px #0C121D;
+}
+
+.m {
+	font-style: italic;
+	letter-spacing: 1pt;
+	color: #FFFFF8;
+	margin-left: 20px;
+	font-size: .9rem;
+	text-align: center;
+}
+
+.pagetitle{
+	margin: 10%;
+	font-style:bold;
+	color: #10041c;
+	text-align: left;
+}
+
+
+nav {
+	margin: 0 auto;
+	font-size: 1.6rem;
+	max-width: 760px;
+	color: white;
+	text-shadow: 2px 2px #0C121D;
+	display: flex;
+	align-items:right;
+	justify-content:right;
+}
+.navigation {
+	list-style: none;
+	text-align: center;
+	padding: 0;
+}
+.navigation li:first-child {
+	display: block;
+}
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	color: white;
+	padding: 0.70rem;
+	text-align: center;
+	text-decoration: none;
+}
+.navigation a:hover {
+	
+	background-color: #ffff66;
+	font-weight: 700;
+}
+/*gallery*/
+div.gallery {
+	border: 1px solid #ccc;
+  }
+  
+  div.gallery:hover {
+	border: 1px solid #777;
+  }
+  
+  div.gallery img {
+	width: 100%;
+	height: auto;
+  }
+  
+  div.desc {
+	padding: 15px;
+	text-align: center;
+  }
+  
+  * {
+	box-sizing: border-box;
+  }
+  
+  .responsive {
+	padding: 0 6px;
+	float: left;
+	width: 24.99999%;
+  }
+  
+  @media only screen and (max-width: 700px) {
+	.responsive {
+	  width: 49.99999%;
+	  margin: 6px 0;
+	}
+  }
+  
+  @media only screen and (max-width: 500px) {
+	.responsive {
+	  width: 100%;
+	}
+  }
+  
+  .clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+
+/* Media Query for small */
+@media only screen and (max-width: 32.5em) {
+	.forcast{
+		display: none;
+	}
+	.contact img{
+		display: none;
+	}
+}
+
+
+/* the onclick JS toggles the .repsonsive class from display none (.navigation li) to display block because the repsonsive class is added to the end of the class list like this in HTML Line #6.
+  <ul class="navigation responsive">
+  */
+.responsive li {
+	display: block;
+}
+
+
+/*hover*/
+.weather img{
+	width: 90%;
+	max-width: 922px;
+	display: block;
+	margin-left:auto;
+	margin-right:auto;
+
+}
+.weather{
+	margin: 10px auto;
+	position: relative;
+}
+
+.summary{
+	position: absolute;
+	padding: .5rem;
+	padding-bottom: 2rem;
+	text-align: center;
+	color: #043c53;
+	border: 1px solid rgb(9, 84, 114);
+	width: 200px;
+	height: 200px;
+	position: relative;
+	bottom:350px;
+	left:65px;
+	background: radial-gradient(#eee, #7ee2fc);
+	box-shadow: 0 0 30px #111;
+	margin:20px;
+}
+
+.eventsDiv{
+	margin: 10px auto;
+}
+
+.eventsSec{
+	padding: .5rem;
+	text-align: center;
+	color: #043c53;
+	border: 1px solid rgb(9, 84, 114);
+	width: auto;
+	height: auto;
+	background: radial-gradient(#eee, #7ee2fc);
+	margin:20px;
+}
+
+/*forecast*/
+table, th, td{
+	margin-left: auto;
+	margin-right: auto;
+	border-collapse: collapse;
+	border: 1px #043c53;
+	color: #043c53;
+	background-color: #7ee2fc;
+	}
+
+th, td{
+	text-align: center;
+	padding: 10px;
+}
+.forecast img{
+	width: 30%;
+	height: auto;
+}
+/* trying to add background color to first row of table
+tr#headerrow{
+	background-color: #7ee2fc;
+}
+*/
+
+/*article*/
+.article{
+	width: auto;
+	text-align: wrap;
+	padding:20px;
+	display: flex;
+	flex-direction: row;
+	flex-flow: column wrap;
+	align-items: center;
+	justify-content: center;
+	flex: 2 0 0;
+	background-color: #7ee2fc; 
+	color: #043c53;
+	margin: 20px;
+}
+.article img{
+	display: flex;
+	justify-content: flex-end;
+	flex: 1 0 0;
+	max-width:60%;
+	display:flex;
+	height: auto;
+	float: right;
+	position: relative;
+
+}
+
+/*contact*/
+
+.contact {
+	width: auto;
+	text-align: center;
+	padding:20px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	background-color: #7ee2fc; 
+	color: #043c53;
+	margin: 20px;
+}
+.contact img{
+	display: flex;
+	justify-content: flex-end;
+	max-width:40%;
+	height: auto;
+	float: left;
+	position: relative;
+	border: 2px solid #043C53;
+}
+
+.child1{
+    background-color: white;
+    margin: 5px;
+}

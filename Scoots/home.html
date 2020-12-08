@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="CIT230 Web Frontend Development, BYU-Idaho. Student: Hannah Johnson">
+    <title>Scoots</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,700i|Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/medium.css">
+    <link rel="stylesheet" href="CSS/large.css">
+    <script type="text/javascript" src="JS/banner.js"></script>
+    <script type="text/javascript" src="JS/nav.js"></script>
+    <script type="text/javascript" src="JS/town_info.js"></script>
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+</head>
+
+
+
+    <body onload="isFriday()">
+
+        <aside class="banner">New tours available this weekend! <br /> Contact us for more info.</aside>
+
+        <header>
+           <section class="headings">
+                <h1>Scoots Scooter Rentals </h1>
+                <div class="m">Discover Cozumel, Mexico</div>
+            </section>
+
+       
+        <nav>
+            <ul class="navigation"><!--align to left of screen matching vertical placement of Scoots-->
+                <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="https://snumlik.github.io/Scoots/home.html">Home</a></li>
+                <li><a href="https://snumlik.github.io/Scoots/rentals.html">Rentals</a></li>
+                <li><a href="https://snumlik.github.io/Scoots/reservation.html">Reservations</a></li>
+                <li><a href="https://snumlik.github.io/Scoots/tours.html">Tours</a></li>
+                <li><a href="https://snumlik.github.io/Scoots/contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        </header>
+        
+        
+        <div class="pagetitle">
+
+         <header1><!--I want this in a separate section, under the stripes-->
+                <h1>Scoots</H1>
+                  <h3>Discover Cozumel at your own speed.</h3>
+          </header1>
+
+        </div>
+      
+
+       <!--Image Gallery-->
+       
+                   <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="img_5terre.jpg">
+                <img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+              </a>
+              <div class="desc">Add a description of the image here</div>
+            </div>
+          </div>
+          
+          
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="img_forest.jpg">
+                <img src="img_forest.jpg" alt="Forest" width="600" height="400">
+              </a>
+              <div class="desc">Add a description of the image here</div>
+            </div>
+          </div>
+          
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="img_lights.jpg">
+                <img src="img_lights.jpg" alt="Northern Lights" width="600" height="400">
+              </a>
+              <div class="desc">Add a description of the image here</div>
+            </div>
+          </div>
+          
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="img_mountains.jpg">
+                <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
+              </a>
+              <div class="desc">Add a description of the image here</div>
+            </div>
+          </div>
+          
+          <div class="clearfix"></div>
+          
+
+        
+        <footer class="footer_end">
+            <div>
+                <p class="footerParagraph">
+                    &copy; 2020 | Hannah Johnson | Logan, Utah | <a id="byuiLink"
+                        href="https://www.byui.edu/online">BYU-Idaho Online Learning</a></p>
+                <div id="curDate" onload="currentdate()"></div>
+            </div>
+            <script type="text/javascript" src="JS/currentdate.js"></script>
+        </footer>
+        <!--<script type= "text/javascript" src="JS/weatherapi.js"></script>
+        <script type= "text/javascript" src="JS/windchill.js"></script>-->
+
+</style>
+</head>
+
+
+</html>
