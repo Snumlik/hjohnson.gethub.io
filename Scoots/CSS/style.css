@@ -74,6 +74,12 @@ header {
 	color: #10041c;
 	text-align: left;
 }
+.pagetitlesecondary{
+	margin: 10%;
+	font-style:bold;
+	color: #10041c;
+	text-align: right;
+}
 
 
 nav {
