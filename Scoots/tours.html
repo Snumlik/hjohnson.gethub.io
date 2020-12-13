@@ -15,6 +15,7 @@
     <script type="text/javascript" src="JS/banner.js"></script>
     <script type="text/javascript" src="JS/nav.js"></script>
     <script type="text/javascript" src="JS/town_info.js"></script>
+    <script type="text/javascript" src="js/slides.js"></script>
     <link rel="icon" type="images/png" href="Images/favicon.jpg" sizes="16x16">
     <link rel="icon" type="image/png" href="Images/favicon.jpg" sizes="32x32">
     <link rel="icon" type="image/png" href="Images/favicon.jpg" sizes="96x96">
@@ -46,30 +47,46 @@
         </header>
         
         
-        <div class="pagetitle">
+        <div class="headerimage">
+             </div>
 
-         <header1><!--I want this in a separate section, under the stripes-->
-            <img src="Images/Favicon.jpg" alt="Scoots">
-            <h3>Discover Cozumel at your own speed.</h3>
-          </header1>
-
-        </div>
+             
       <!--Cozumel brief history-->
-      <div>
-          <P>Brief history of Cozumel</P>
+      <div class="textcontainer">
+          <h2>History of Cozumel</h2>
+          <p>The Caribbean island of Cozumel sits 10 miles (16km) off the eastern coast of the Yucatan Peninsula in southeastern Mexico.</p>
+          <P>Once a commercial and cerimonial center during the Myan period (250CE-950CE), Cozumel now runs as a popular tourist destination and home to several small archaeological sites.  Juan de Grijalva lead the first Spanish expedition to Cozumel in 1518.  In 1519 Hernan Cortes used the island as a base for Spanish efforts to conquer the Maya.</P>
+          <p>Click <a href="https://en.wikipedia.org/wiki/Cozumel">here</a> to learn more about the history of Cozumel.</p>
       </div>
 
+      <!--slideshow pics of popular tourist destinations-->
+
+      <div>
+        <img class="mySlides" src="Images/beach.jpg">
+        <img class="mySlides" src="Images/chichen itza.jpg">
+        <img class="mySlides" src="Images/Dune-buggy-cozumel.jpg">
+        <img class="mySlides" src="Images/cozume-family.jpg">
+        <button class="buttonleft" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="buttonright" onclick="plusDivs(+1)">&#10095;</button>
+      </div>
+
+
        <!--where to go once you have your scooter-->
-       <div>
-           <p>Wondering where to go once you have your rental? Check out these recommended locations from previous customers!</p>
-           <ul>
+       <div class="textcontainer">
+           <h2>Wondering where to go once you have your rental? </h2>
+           <p></p>Check out these recommended locations from previous customers!</p>
+           <ul style="list-style:none">
             <li><a href="https://www.planetware.com/tourist-attractions-/cozumel-mex-qr-coz.htm">11 Top-Rated Tourist Attractions in Cozumel by Bryan Dearsley</a> </li>
             <li><a href="https://www.tripadvisor.com/Attractions-g150809-Activities-Cozumel_Yucatan_Peninsula.html">Tripadvisor's "Things to do in Cozumel"</a></li>
             <li><a href="https://www.goatsontheroad.com/things-to-do-in-cozumel/">Goats on the Road's "21 Things to do in Cozumel"</a></a></li>
 
         </div>
-       
 
+
+
+       <div class="options">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d119616.83215917181!2d-86.91794381422764!3d20.46412506632752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1607838582749!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
         
         <footer class="footer_end">
             <div>
