@@ -1,15 +1,8 @@
 
-if (document.title == "Preston") {
+if (document.title == "Home") {
     var cityID = "5604473";
 }
 
-if (document.title == "Soda Springs") {
-    var cityID = "5678757";
-}
-
-if (document.title == "Fish Haven") {
-    var cityID = "4993659";
-}
 
 const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=" + cityID + "&unitsimperial&APPID=c7f64c4fca86e4ff703aa96a3352506b";
 const forcastURL = "https://api.openweathermap.org/data/2.5/forecast?id=" + cityID + "&unitsimperial&APPID=c7f64c4fca86e4ff703aa96a3352506b"
