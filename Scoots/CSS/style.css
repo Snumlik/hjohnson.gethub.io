@@ -200,7 +200,13 @@ div.gallery {
 	Margin: 1rem;
 	padding: 0.70rem;
 	text-align: center;
-	
+}
+.slidecontainer{
+	display: block;
+	align-content: center;
+	margin: auto;
+	width: 90%;
+
 }
 
   /* Style inputs with type="text", select elements and textareas */
@@ -355,11 +361,12 @@ th, td{
 	height: auto;
 }
 .headerimage{
-	width: 100%;
-	height: 250px;
-	background: url("../../../snumlik.github.io/Scoots/Images/artistic-scooter.jpg");
+	background: url("../Images/artistic-scooter.jpg");
 	background-size: cover;
-	
+	background-position: center;
+	width: 100%;
+	height: 300px;
+	margin-top: 10px;
 }
 .mySlides{
 	width: 90%;
