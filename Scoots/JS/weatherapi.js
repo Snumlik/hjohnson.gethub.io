@@ -1,11 +1,6 @@
 
-if (document.title == "Home") {
-    var cityID = "5604473";
-}
-
-
-const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=" + cityID + "&unitsimperial&APPID=c7f64c4fca86e4ff703aa96a3352506b";
-const forcastURL = "https://api.openweathermap.org/data/2.5/forecast?id=" + cityID + "&unitsimperial&APPID=c7f64c4fca86e4ff703aa96a3352506b"
+const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=" + 3530103 + "&unitsimperial&APPID=c7f64c4fca86e4ff703aa96a3352506b";
+const forcastURL = "https://api.openweathermap.org/data/2.5/forecast?id=" + 3530103 + "&unitsimperial&APPID=c7f64c4fca86e4ff703aa96a3352506b"
 
 fetch(apiURL)
     .then((response) => response.json())

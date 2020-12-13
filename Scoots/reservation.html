@@ -46,37 +46,90 @@
         </nav>
         </header>
         
-        
+        <div class="headerimage">
+        </div>
+
         <div class="pagetitle">
 
-            <div class="headerimage">
-            </div>
+           
 
-
-         <header1><!--I want this in a separate section, under the stripes-->
-          
-            <h1>Reservation Availability</h1>
+         <header1>
+            <h1>Ready to make a Reservation?</h1>
           </header1>
 
         </div>
+      <!--reservation fields-->
+      <div class="container">
+        <form action="action_page.php">
       
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          
+          <label for="fname">Email</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your Email..">
+      
+          <label for="lname">Phone Number</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your Phone Number..">
 
-            <!--Calendar with availability listing?-->
+          <label for="lname"> Street address</label>
+          <input type="text" id="lname" name="lastname" placeholder="Street Address..">
+                    
+          <label for="lname"> State</label>
+          <input type="text" id="lname" name="lastname" placeholder="State of Residence..">
+          
+          <label for="fname">Country</label>
+          <input type="text" id="fname" name="firstname" placeholder="Country of Residence..">
+      
+          <label for="lname">Which Cuiseline are you sailing on?</label>
+          <input type="text" id="lname" name="lastname" placeholder="Name of Cruiseline..">
+          
+
+          <label for="fname">Rental Date</label>
+          <input type="text" id="fname" name="firstname" placeholder="Rental Date..">
+      
+          
+          <label for="country">Model</label>
+          <select id="country" name="country">
+            <option value="Metro Scooter">Honda Metro Scooter</option>
+            <option value="Dio Scooter">Honda Dio Scooter</option>
+            <option value="PCX150">Honda PCX150 Scooter</option>
+            <option value="Pioneer">Honda Pioneer ATV</option>
+            <option value="4 Door">Jeep 4 Door</option>
+            <option value="2 Door">Jeep 2 Door</option>
+            
+        </select>
+        <label for="country">How long would you like to use the rental?</label>
+        <select id="country" name="country">
+          <option value="Metro Scooter">Half Day (3 Hours)</option>
+          <option value="Dio Scooter">Full Day (8 Hours)</option>            
+        </select>
+
+          </select>
+          <label for="country">Pick Up from which Scoots Location?</label>
+          <select id="country" name="country">
+            <option value="Metro Scooter">Ferry Dock</option>
+            <option value="Dio Scooter">Puerta Maya</option>            
+          </select>
+
+          <label for="subject">Special Accomidations/Comments</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+      
+        </form>
+        
+      </div>
+
+            
 
           
             <div class="calendar-container" id="calendar"></div>
            
            <div class="container">
-            <label for="country">Model</label>
-            <select id="country" name="country">
-              <option value="Metro Scooter">Honda Metro Scooter</option>
-              <option value="Dio Scooter">Honda Dio Scooter</option>
-              <option value="PCX150">Honda PCX150 Scooter</option>
-              <option value="Pioneer">Honda Pioneer ATV</option>
-              <option value="4 Door">Jeep 4 Door</option>
-              <option value="2 Door">Jeep 2 Door</option>
-              
-            </select>
+           
            </div>
 
 
